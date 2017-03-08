@@ -8,11 +8,24 @@ import java.util.Scanner;
 
 import teacherUtils.Teacher;
 
+
+/***
+ * 
+ * @author Sonia ASSAM
+ * Class that read a file of teacher's data
+ *
+ */
 public class TeacherReader 
 {
 	
 	
 	@SuppressWarnings("resource")
+	/***
+	 * 
+	 * @param fileName : name or path of the file
+	 * @return list of the read teachers
+	 * @throws FileNotFoundException
+	 */
 	public static ArrayList <Teacher> readTeacher(String fileName) throws FileNotFoundException
 	{
 		File file = new File(fileName);
